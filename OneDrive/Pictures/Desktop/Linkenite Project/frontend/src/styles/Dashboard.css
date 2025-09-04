@@ -1,0 +1,135 @@
+body, .dashboard-dark {
+  background: #181a1b;
+  color: #f5f6fa;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  background: #232526;
+  border-bottom: 2px solid #222;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f5f6fa;
+}
+
+.dashboard-analytics {
+  margin: 2rem auto;
+  max-width: 900px;
+  background: #232526;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  padding: 1.5rem;
+}
+
+.dashboard-analytics h2 {
+  margin-bottom: 1rem;
+  color: #00b894;
+}
+
+.stats-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #181a1b;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 1rem;
+  min-width: 120px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #f5f6fa;
+  border: 1px solid #222;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.toggle-buttons button {
+  background: #232526;
+  color: #f5f6fa;
+  border: 2px solid #00b894;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.toggle-buttons button.active,
+.toggle-buttons button:hover {
+  background: #00b894;
+  color: #181a1b;
+}
+
+.centered-emails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.centered-emails h2 {
+  color: #e17055;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.email-card {
+  background: #181a1b;
+  border: 2px solid #444;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  color: #f5f6fa;
+  width: 600px;
+  max-width: 90vw;
+  font-size: 1.15rem;
+}
+
+.email-card.urgent {
+  border-color: #e17055;
+  background: #2d2326;
+}
+
+.email-card.not-urgent {
+  border-color: #00b894;
+  background: #232526;
+}
+
+.email-card h3 {
+  color: #00b894;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.email-card p {
+  margin: 0.3rem 0;
+  font-size: 1.05rem;
+}
+
+.email-card textarea {
+  width: 100%;
+  background: #232526;
+  color: #f5f6fa;
+  border: 1px solid #444;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.05rem;
+  resize: vertical;
+}
